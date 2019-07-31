@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javaScript</title>
+    <style>
+      body {
+        magin: 0;
+      }
+      #blueDiv {
+        position: absolute;
+        top: 100px;
+        background-color: lightblue;
+        width: 250px;
+        height: 250px;
+      }
+      #yellowDiv {
+        position: absolute;
+        top: 100px;
+        background-color: yellow;
+        width: 250px;
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="blue()">change the color to blue</button>
+    <button onclick="yellow()">change the color to yellow</button>
+    <button>change the color to red</button>
+    <button>change the color to green</button>
+    <div id="blueDiv"></div>
+    <script language = "javaScript">
+        var div = document.getElementById("blueDiv");
+        function blue() {
+          div.setAttribute("id", "blueDiv");
+        }
+        function yellow() {
+          div.setAttribute("id", "yellowDiv");
+        }
+    </script>
+  </body>
+</html>
