@@ -20,21 +20,34 @@
         width: 250px;
         height: 250px;
       }
+      #redDiv {
+        position: absolute;
+        top: 100px;
+        background-color: red;
+        width: 250px;
+        height: 250px;
+      }
     </style>
   </head>
   <body>
     <button onclick="blue()">change the color to blue</button>
     <button onclick="yellow()">change the color to yellow</button>
-    <button>change the color to red</button>
+    <button onclick="red()">change the color to red</button>
     <button>change the color to green</button>
     <div id="blueDiv"></div>
-    <script language = "javaScript">
+    <script>
         var div = document.getElementById("blueDiv");
         function blue() {
           div.setAttribute("id", "blueDiv");
-        }
+        };
         function yellow() {
           div.setAttribute("id", "yellowDiv");
+        };
+        function red() {
+          div.setAttribute("id", "redDiv");
+        };
+        function green() {
+          div.setAttribute("id", "greenDiv");
         }
     </script>
   </body>
