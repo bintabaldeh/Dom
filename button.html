@@ -27,13 +27,20 @@
         width: 250px;
         height: 250px;
       }
+      #greenDiv {
+        position: absolute;
+        top: 100px;
+        background-color: green;
+        width: 250px;
+        height: 250px;
+      }
     </style>
   </head>
   <body>
     <button onclick="blue()">change the color to blue</button>
     <button onclick="yellow()">change the color to yellow</button>
     <button onclick="red()">change the color to red</button>
-    <button>change the color to green</button>
+    <button onclick="green()">change the color to green</button>
     <div id="blueDiv"></div>
     <script>
         var div = document.getElementById("blueDiv");
@@ -48,7 +55,7 @@
         };
         function green() {
           div.setAttribute("id", "greenDiv");
-        }
+        };
     </script>
   </body>
 </html>
