@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my javascript test</title>
+    <style>
+      .target {
+        color: blue;
+      }
+      .green { color: green; }
+      .blue { color: blue; }
+      .red { color: red; }
+    </style>
+  </head>
+  <body>
+    <button onclick="blue()">change the background-color of the text to blue</button>
+    <button onclick="green()">change the background-color of the text to green</button>
+    <button onclick="red()">change the background-color of the text to red</button>
+    <div class="target">Hello World!</div>
+    <div class="target">Hi</div>
+    <h1 class="target">hogehoge</h1>
+
+    <script language ="javascript">
+      var elems = document.getElementsByClassName("target");
+      const colors = ["blue", "red", "green"];
+      function setColor(enabledColor) {
+        for(let i = 0; i < elems.length; i++) {
+          for(let colorIndex = 0; colorIndex < colors.length; colorIndex++){
+            let color = colors[colorIndex];
+            if (color === enabledColor) {
+              elems[i].classList.add(color)
+            } else {
+              elems[i].classList.remove(color);
+            }
+          }
+        }
+      }
+      function blue() {
+        setColor("blue");
+      };
+      function green() {
+        setColor("green");
+      };
+      function red(){
+        setColor("red");
+      }
+    </script>
+  </body>
+</html>
