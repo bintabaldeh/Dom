@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my javascript</title>
+  </head>
+  <body>
+    <p id="demo">Click the button to change the layout of the this paragraph</p>
+    <button onclick="firstfunction()">click me</button>
+    <button onclick="secondfunction()">click me</button>
+    <button onclick="thirdfunction()">click me</button>
+    <button onclick="fouthfunction()">click me</button>
+    <script language ="javascript">
+       function firstfunction() {
+         const x = document.getElementById("demo");
+         x.style.color = "yellow";
+         x.style.fontSize = "1.5rem";
+    };
+    function secondfunction() {
+      const x = document.getElementById("demo");
+      x.style.color = "red";
+      x.style.fontSize = "2rem";
+    };
+    function thirdfunction() {
+      const x = document.getElementById("demo");
+      x.style.color = "blue";
+      x.style.fontSize = "2.5rem";
+    };
+    function fouthfunction() {
+      const x = document.getElementById("demo");
+      x.style.color = "pink";
+      x.style.fontSize = "3rem";
+    };
+    </script>
+  </body>
+</html>
