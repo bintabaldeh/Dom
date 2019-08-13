@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript.</title>
+  </head>
+  <body>
+    <button id="demo">Red Button</button>
+    <script language="javascript">
+      function turnButtonRed () {
+      let element = document.getElementById("demo");
+          element.style.backgroundColor = "red";
+          element.style.color = "white";
+      }
+      document.getElementById("demo").addEventListener("click", turnButtonRed);
+    </script>
+  </body>
+</html>
