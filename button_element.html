@@ -5,13 +5,17 @@
   </head>
   <body>
     <button id="demo">Red Button</button>
+    <button id="demo">White Button</button>
     <script language="javascript">
       function turnButtonRed () {
       let element = document.getElementById("demo");
           element.style.backgroundColor = "red";
           element.style.color = "white";
+    };
+    document.getElementById("demo").addEventListener("click", turnButtonRed);
+      function turnButtonWhite () {
+        let element = document.getElementById("")
       }
-      document.getElementById("demo").addEventListener("click", turnButtonRed);
     </script>
   </body>
 </html>
