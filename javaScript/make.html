@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javaScript page.com</title>
+  </head>
+  <body>
+    <button id="button">Red Button</button>
+    <script language="javascript">
+      function turnButtonRed() {
+        const t = document.getElementById("button");
+              t.style.color = "red";
+              t.style.backgroundColor = "green";
+              t.style.width = "50%";
+              t.style.fontSize = "2rem";
+      }
+      document.getElementById("button").addEventListener("click", turnButtonRed);
+    </script>
+  </body>
+</html>
