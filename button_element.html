@@ -2,20 +2,30 @@
 <html>
   <head>
     <title>javascript.</title>
+    <style>
+    html, body {
+      background: yellow;
+    }
+    </style>
   </head>
   <body>
     <button id="demo">Red Button</button>
-    <button id="demo">White Button</button>
+    <button id="mode">White Button</button>
     <script language="javascript">
       function turnButtonRed () {
       let element = document.getElementById("demo");
           element.style.backgroundColor = "red";
+          element.style.padding = "15px";
           element.style.color = "white";
     };
     document.getElementById("demo").addEventListener("click", turnButtonRed);
       function turnButtonWhite () {
-        let element = document.getElementById("")
+        let element = document.getElementById("mode");
+            element.style.color = "orange";
+            element.style.backgroundColor = "blue";
+            element.style.padding = "15px";
       }
+      document.getElementById("mode").addEventListener("click", turnButtonWhite);
     </script>
   </body>
 </html>
